@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import MustDoIT from "./components/MustDoIT";
+import Nav from "./components/Nav";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  state = {
+    input: "",
+    mustdo: [
+      { id: 0, text: " 리액트 소개1" },
+      { id: 1, text: " 리액트 소개2" },
+      { id: 2, text: " 리액트 소개3" },
+    ],
+  };
+  render() {
+    const { input, mustdo, handleChange } = this.state;
+    return (
+      <>
+        <Nav></Nav>
+        <MustDoIT input={input} mustdo={mustdo} onChange={handleChange} />
+      </>
+    );
+  }
 }
 
 export default App;

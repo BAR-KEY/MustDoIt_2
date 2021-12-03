@@ -1,0 +1,18 @@
+.TodoList {
+  width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: gray 1px 1px 1px 1px;
+  border: black;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.TodoList:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.TodoList_title {
+}
+.TodoList_items {
+}
+.TodoList_item {
+}

@@ -1,0 +1,43 @@
+.EnterYourMustDo {
+  width: 600px;
+  height: 100px;
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: gray 1px 1px 1px 1px;
+  border: black;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.EnterYourMustDo:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.EnterYourMustDo_form {
+}
+.EnterYourMustDo_input {
+  border-radius: 5px;
+  width: 480px;
+  height: 80px;
+  border: 0;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px,
+    rgb(209, 213, 219) 0px 0px 0px 1px inset;
+  font-size: 20px;
+}
+.EnterYourMustDo_button {
+  width: 70px;
+  height: 70px;
+  background-color: #3cb371;
+  box-shadow: gray 1px 1px 1px;
+  border-color: transparent;
+  border-radius: 10px;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.EnterYourMustDo_button:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.faPen {
+  color: white;
+  font-size: 25px;
+}
