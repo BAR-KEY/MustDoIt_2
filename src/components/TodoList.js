@@ -7,7 +7,7 @@ const TodoList = (props) => {
     <div className="TodoList">
       <div className="TodoList_title">Must Do</div>
       <div className="TodoList_items">
-        <TodoListItem mustdo={props.mustdo}></TodoListItem>
+        <TodoListItem mustdo={props.mustdo} key={props.key}></TodoListItem>
       </div>
     </div>
   );

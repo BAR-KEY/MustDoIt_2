@@ -3,7 +3,7 @@ import "./EnterYourMustDo.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPen } from "@fortawesome/free-solid-svg-icons";
 
-const EnterYourMustDo = ({ input, onChange }) => {
+const EnterYourMustDo = ({ value, onChange, onCreate }) => {
   return (
     <div className="EnterYourMustDo">
       <form action="" className="EnterYourMustDo_form">
@@ -11,10 +11,11 @@ const EnterYourMustDo = ({ input, onChange }) => {
           type="text"
           placeholder="   Enter Your Must Do"
           className="EnterYourMustDo_input"
-          value={input}
+          value={value}
+          onChange={onChange}
         ></input>
       </form>
-      <button className="EnterYourMustDo_button" onClick={onChange}>
+      <button className="EnterYourMustDo_button" onClick={onCreate}>
         <FontAwesomeIcon icon={faPen} className="faPen" />
       </button>
     </div>
